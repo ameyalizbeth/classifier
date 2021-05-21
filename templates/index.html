@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ML Deployment</title>
+ <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+<body>
+ <div class="login">
+	<h1>SUS</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+   
+<p>Hi this is your very average image classifier. Upload an image or give a url to an image and our algorithm will tell you what it is. I should warn you beforehand our prediction might be wrong. OOPS !</p>
+
+<form action="/" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" id="image">
+	or
+    <input type="text" name="url" placeholder="url of an image"  />
+    <input type="submit" value="Submit">
+</form>
+
+   <br>
+   <br>
+  
+ </div>
+</body>
+</html>
