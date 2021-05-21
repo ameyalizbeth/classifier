@@ -145,8 +145,8 @@ def prediction(img_path,transformer):
 
 app = Flask(__name__) #Initialize the flask App
 app.secret_key = '1234'
-app.config['UPLOAD_FOLDER'] = '.\\predicting_images'
-pred_path = '.\\predicting_images'
+app.config['UPLOAD_FOLDER'] = './predicting_images'
+pred_path = './predicting_images'
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
